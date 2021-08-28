@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body id="login">
+    <div class="row">
+        <div class="content-image col-lg-6">
+            <img src="./images/background.jpg" alt="">
+        </div>
+
+        <div class="content-login col-lg-6">
+            <form class="login-form validate-form">
+                <img class="form-logo" src="./images/Daredevil_Logo.png" alt="logo">
+                <span class="login-title">
+					Entrar no sistema de recados
+				</span>
+
+                <div class="input-form1 validate-input" data-validate="Type user name">
+                    <input id="userName" class="input-form" type="text" name="userName" placeholder="UserName">
+                </div>
+                <div class="input-form2 validate-input" data-validate="Type password">
+                    <input class="input-form" id="password" type="password" name="password" placeholder="Password">
+                </div>
+
+                <div class="content-button">
+                    <button class="login-button btn-success" onclick="validateUser(event)">
+						Entrar
+					</button>
+
+                </div>
+
+                <div class="content-cad">
+                    <a href="./register.html" class="criarConta-txt">
+						Criar Conta
+					</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src=" https://unpkg.com/axios/dist/axios.min.js "></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

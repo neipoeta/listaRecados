@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuario</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body id="scrap">
+
+    <fieldset>
+        <legend>Insert Message</legend>
+        <input id="description" type="text" placeholder="Descrição">
+        <input id="title" type="text" placeholder="title">
+        <button class="btn-primary" onclick="saveScrap(event)">
+      Salvar
+    </button>
+        <table id="list" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Detalhamento</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <script src=" https://unpkg.com/axios/dist/axios.min.js "></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scrap.js"></script>
+</body>
+
+</html>

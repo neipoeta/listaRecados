@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body id="register">
+    <div class="row">
+        <div class="content-image col-lg-6">
+            <img src="./images/background.jpg" alt="">
+        </div>
+
+        <div class="content-login col-lg-6">
+            <form class="login-form-cad validate-form">
+                <img class="form-logo" src="./images/Daredevil_Logo.png" alt="logo">
+                <br>
+                <span class="login-title">
+					Criar Conta
+				</span>
+
+                <div class="input-form1-cad validate-input" data-validate="Type userName">
+                    <input id="userName" class="input-form" type="text" name="userName" placeholder="userName or e-mail">
+                </div>
+                <div class="input-form2 validate-input" data-validate="Type password">
+                    <input class="input-form" id="password" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="input-form2 validate-input" data-validate="Type password">
+                    <input class="input-form" id="password2" type="password" name="password2" placeholder="Repeat Password">
+                </div>
+
+                <div class="content-button">
+
+                    <button class="login-button btn-success" onclick="registerUsers(event)">
+						Criar conta agora
+					</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src=" https://unpkg.com/axios/dist/axios.min.js "></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
